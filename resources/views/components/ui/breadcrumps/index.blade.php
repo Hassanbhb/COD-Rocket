@@ -1,0 +1,1 @@
+<div class="flex items-center py-4 group px-4 dark:bg-gray-800">{{ $slot }}</div>

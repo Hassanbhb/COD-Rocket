@@ -1,0 +1,1 @@
+<div {{ $attributes->merge(["class" => "inline-flex rounded-md shadow-sm p-0.5 gap-0.5 border bg-gray-100 dark:border-gray-600 dark:bg-gray-700"]) }} role="group">{{ $slot }}</div>

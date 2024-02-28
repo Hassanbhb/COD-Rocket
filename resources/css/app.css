@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	input[type="hidden"], [x-cloak] { display: none !important }
+	[drawer-backdrop] { @apply md:!z-40 }
+}
