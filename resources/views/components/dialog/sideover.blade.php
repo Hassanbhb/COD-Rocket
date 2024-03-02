@@ -1,4 +1,4 @@
-@props(['id', 'title', 'size' => 'md:max-w-sm'])
+@props(['id', 'title', 'footer', 'size' => 'md:max-w-sm'])
 
 <aside id="{{ $id }}" class="fixed shadow-lg top-0 flex flex-col w-full right-0 !z-50 h-screen transition-transform translate-x-full bg-white dark:bg-gray-800 {{ $size }}" tabindex="-1" aria-labelledby="drawer-right-label">
 	<header class="border-b flex items-center px-6 py-4 border-gray-300 dark:border-gray-600">
@@ -19,7 +19,9 @@
 	@isset($footer)
 		<footer class="flex w-full gap-4 items-center justify-end px-6 py-4 border-t border-gray-300 dark:border-gray-600">
 			<x-ui.button data-drawer-hide="{{ $id }}" aria-controls="{{ $id }}" style="mute" class="flex-1">{{ __('Cancel') }}</x-ui.button>
-			@isset($footer) {{ $footer }} @endisset
+			@isset($footer) 
+			<x-ui.button type="submit" class="flex-1">{{ $footer }}</x-ui.button>
+			@endisset
 		</footer>
 	@endisset
 </aside>
