@@ -6,6 +6,7 @@
 	<x-link icon="shopping-cart" path="merchant.orders">{{ __('Orders') }}</x-link>
 	<x-link icon="users" path="merchant.customers">{{ __('Customers') }}</x-link>
 	<x-link icon="cursor-arrow-ripple" path="merchant.integrations">{{ __('Sales channels') }}</x-link>
+	<x-link icon="adjustments-horizontal" path="merchant.order-form">{{ __('Order Forms') }}</x-link>
 </x-link-group>
 
 <x-link-group name="Inventory" expend>

@@ -4,6 +4,8 @@ use App\Livewire\Merchant\Balance\BalanceHistory;
 use App\Livewire\Merchant\Customers\CustomerList;
 use App\Livewire\Merchant\Expenses\ExpenseList;
 use App\Livewire\Merchant\Integrations\IntegrationList;
+use App\Livewire\Merchant\OrderForm;
+use App\Livewire\Merchant\OrderForm\Forms;
 use App\Livewire\Merchant\Orders\OrderList;
 use App\Livewire\Merchant\Partnerships\Freelancers\PartnershipList as DelivererPartnership;
 use App\Livewire\Merchant\Partnerships\Freelancers\PartnershipList as FreelancerPartnership;
@@ -18,6 +20,7 @@ Route::group(['as' => 'merchant.'], function() {
 	Route::get('/orders', OrderList::class)->name('orders');
 	Route::get('/customers', CustomerList::class)->name('customers');
 	Route::get('/integrations', IntegrationList::class)->name('integrations');
+	Route::get('/order-form', Forms::class)->name('order-form');
 	
 	Route::get('/products', ProductList::class)->name('products');
 	Route::get('/transfers', TransferList::class)->name('transfers');

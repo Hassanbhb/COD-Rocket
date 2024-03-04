@@ -45,7 +45,7 @@
             </div>
 
             <nav class="h-full flex-1 z-30 px-6 py-4 overflow-y-auto dark:bg-gray-800 space-y-6">
-                @include('deliverer.layout.sidebar')
+                @include('merchant.layout.sidebar')
             </nav>
 
             <div class="px-6 py-4">
