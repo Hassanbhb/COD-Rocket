@@ -8,6 +8,6 @@ class IntegrationList extends Component
 {
     public function render()
     {
-        return view('merchant.interations.integration-list');
+        return view('merchant.integrations.integration-list');
     }
 }
