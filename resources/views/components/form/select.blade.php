@@ -1,4 +1,4 @@
-@props(['label', 'size' => 'md'])
+@props(['id', 'label', 'size' => 'md'])
 
 @php
 	$selectWireModel = $attributes->whereStartsWith('wire:model')->first();
