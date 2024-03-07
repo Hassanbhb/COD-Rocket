@@ -1,3 +1,5 @@
+const plugin = require('@tailwindcss/typography');
+
 module.exports = {
     darkMode: 'class',
 
@@ -26,5 +28,16 @@ module.exports = {
     plugins: [
         require('flowbite/plugin'),
         require("@tailwindcss/typography"),
+        plugin(function({ addUtilities }) {
+            addUtilities({
+                '.no-scrollbar::-webkit-scrollbar': {
+                    display: 'none',
+                },
+                '.no-scrollbar': {
+                    '-ms-overflow-style': 'none',
+                    'scrollbar-width': 'none',
+                },
+            })
+        }),
     ],
 };
