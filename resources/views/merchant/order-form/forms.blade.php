@@ -10,14 +10,15 @@
             Create form
         </x-ui.button>
     </div>
-    <x-dialog.sideover id="create_form" title="Create form" size="md:max-w-7xl" footer="save form" class="flex gap-6">
+    <x-dialog.sideover id="create_form" title="Create form" size="md:max-w-7xl" footer="save form"
+        class="flex flex-col lg:flex-row gap-6">
 
-        <div class="flex flex-col gap-6 w-1/2">
+        <div class="flex flex-col gap-6 w-full lg:w-1/2">
 
             {{-- form settings card --}}
             <x-ui.card header="Form Information" icon="information-circle">
                 {{-- form name and language --}}
-                <div class="flex gap-12">
+                <div class="flex flex-col md:flex-row gap-3 md:gap-12">
                     {{-- form name --}}
                     <div class="flex-auto">
                         <label for="form_name" class="font-medium text-gray-900 dark:text-gray-300">
@@ -27,7 +28,7 @@
                     </div>
 
                     {{-- language --}}
-                    <div class="w-64">
+                    <div class="w-full md:w-48">
                         <label for="language" class="font-medium text-gray-900 dark:text-gray-300">
                             Language
                         </label>
@@ -54,8 +55,8 @@
                 {{-- tabs --}}
                 <div
                     class="mb-4 mt-2 pl-1 bg-gray-50 dark:bg-gray-900 rounded-lg border-b border-gray-200 dark:border-gray-700">
-                    <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="default-styled-tab"
-                        data-tabs-toggle="#default-styled-tab-content"
+                    <ul class="flex flex-nowrap overflow-scroll md:overflow-auto no-scrollbar -mb-px text-sm font-medium text-center"
+                        id="default-styled-tab" data-tabs-toggle="#default-styled-tab-content"
                         data-tabs-active-classes="text-primary hover:text-purple-600 dark:text-purple-500 dark:hover:text-purple-500 border-primary dark:border-purple-500"
                         data-tabs-inactive-classes="dark:border-transparent text-gray-500 hover:text-gray-600 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700 dark:hover:text-gray-300"
                         role="tablist">
@@ -76,12 +77,12 @@
                                 id="shipping-tab" data-tabs-target="#shipping" type="button" role="tab"
                                 aria-controls="shipping" aria-selected="false">Shipping</button>
                         </li>
-                        <li role="presentation">
+                        {{-- <li role="presentation">
                             <button
                                 class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
                                 id="upsell-tab" data-tabs-target="#upsell" type="button" role="tab"
                                 aria-controls="upsell" aria-selected="false">Upsell</button>
-                        </li>
+                        </li> --}}
                         <li role="presentation">
                             <button
                                 class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
@@ -163,7 +164,7 @@
                                         <th scope="col" class="px-6 py-3">
                                             Field
                                         </th>
-                                        <th scope="col" class="px-6 py-3">
+                                        <th scope="col" class="min-w-48 px-6 py-3">
                                             Field Text
                                         </th>
                                         <th scope="col" class="px-3 py-3 text-center">
@@ -411,7 +412,7 @@
                                             size="lg" class="mt-2" />
                                     </div>
 
-                                    <div class="mt-5 flex gap-8">
+                                    <div class="mt-5 flex flex-col md:flex-row gap-8">
                                         {{-- Qty --}}
                                         <div class="flex-1">
                                             <label for="quantity-input"
@@ -445,7 +446,6 @@
                                                 </button>
                                             </div>
                                         </div>
-
                                         {{-- tags --}}
                                         <div class="flex-1">
                                             <label for="tags"
@@ -455,6 +455,7 @@
                                             <x-form.input id="tags" placeholder="50% off" size="lg"
                                                 class="mt-2" />
                                         </div>
+                                        {{-- total price --}}
                                         <div class="flex-1">
                                             <label for="total_price"
                                                 class="font-medium text-gray-900 dark:text-gray-300">
@@ -551,11 +552,11 @@
                                 {{-- offer shipping option --}}
                                 <div class="offer hidden">
                                     <div class="flex gap-8 mt-3">
-                                        <div class="flex-1 flex items-center">
+                                        <div class="flex-initial flex items-center">
                                             <p>Offer 1</p>
                                         </div>
 
-                                        <div class="flex-1 flex gap-4 items-center">
+                                        <div class="flex-1 flex gap-4 items-center justify-end">
                                             <label for="shipping_price"
                                                 class="font-medium text-sm text-gray-900 dark:text-gray-300">
                                                 Shipping Price
@@ -569,7 +570,7 @@
                         </div>
                     </div>
 
-                    {{-- upsell tab --}}
+                    {{-- upsell tab
                     <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="upsell" role="tabpanel"
                         aria-labelledby="upsell-tab">
                         <div>
@@ -579,7 +580,7 @@
 
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
 
                     {{-- Advanced options --}}
                     <div class="hidden p-4 rounded-lg bg-white dark:bg-gray-800" id="advanced" role="tabpanel"
@@ -587,7 +588,7 @@
                         <div>
                             <p class="font-medium text-gray-900 dark:text-gray-300 pb-2 mb-2 border-b">Advanced options
                             </p>
-                            <div class="flex gap-5">
+                            <div class="flex flex-col md:flex-row gap-5">
                                 <div class="flex-1">
                                     <label for="staff"
                                         class="font-medium text-sm text-gray-900 dark:text-gray-300">Assign to
@@ -618,7 +619,7 @@
                                     </x-form.select>
                                 </div>
                             </div>
-                            <div class="flex gap-5 mt-5">
+                            <div class="flex flex-col md:flex-row gap-5 mt-5">
                                 <div class="flex-1">
                                     <label for="staff"
                                         class="font-medium text-sm text-gray-900 dark:text-gray-300">Confirmation
@@ -654,7 +655,7 @@
         </div>
 
         {{-- preview card --}}
-        <x-ui.card header="Form Preview" icon="squares-plus" class="!w-1/2">
+        <x-ui.card header="Form Preview" icon="squares-plus" class=" lg:!w-1/2">
             Preview
         </x-ui.card>
     </x-dialog.sideover>
