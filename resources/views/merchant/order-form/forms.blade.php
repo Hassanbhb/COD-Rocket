@@ -674,14 +674,14 @@
                 <div class="flex flex-col gap-3">
                     <div class="pb-7 mb-3 border-b border-gray-200">
                         <ul class="grid w-full gap-6">
-                            <li>
+                            <li class="relative">
                                 <input type="radio" id="offer-1" name="offer" value="offer-1"
                                     class="hidden peer" required />
                                 <label for="offer-1"
-                                    class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-gray-500 peer-checked:bg-gray-100 peer-checked:border-gray-400 peer-checked:text-gray-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
+                                    class="inline-flex items-center justify-between w-full p-5 md:p-2 text-gray-500 bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-gray-500 peer-checked:bg-gray-100 peer-checked:border-gray-400 peer-checked:text-gray-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
                                     <div class="flex gap-5 items-center">
                                         <img src="https://images.unsplash.com/photo-1592789705501-f9ae4278a9c9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                            alt="product" class="object-cover w-10 h-10 rounded-lg">
+                                            alt="product" class="object-cover w-20 h-14 rounded-lg">
                                         <div>
                                             <div class="w-full font-medium text-lg">Buy 2 get 1 for Free</div>
                                         </div>
@@ -689,15 +689,19 @@
                                     <div class="w-fit h-fit ms-3 rtl:rotate-180 font-bold" aria-hidden="true">340 Dhs
                                     </div>
                                 </label>
+                                <span
+                                    class="absolute right-5 -top-2 bg-gray-200 px-5 py-1 text-sm rounded-full font-medium">save
+                                    25%
+                                </span>
                             </li>
-                            <li>
+                            <li class="relative">
                                 <input type="radio" id="offer-2" name="offer" value="offer-2"
                                     class="hidden peer" required />
                                 <label for="offer-2"
-                                    class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-gray-500 peer-checked:bg-gray-100 peer-checked:border-gray-400 peer-checked:text-gray-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
+                                    class="inline-flex items-center justify-between w-full p-5 md:p-2 text-gray-500 bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-gray-500 peer-checked:bg-gray-100 peer-checked:border-gray-400 peer-checked:text-gray-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
                                     <div class="flex gap-5 items-center">
                                         <img src="https://images.unsplash.com/photo-1592789705501-f9ae4278a9c9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                            alt="product" class="object-cover w-10 h-10 rounded-lg">
+                                            alt="product" class="object-cover w-20 h-14 rounded-lg">
                                         <div>
                                             <div class="w-full font-medium text-lg">Buy 1</div>
                                         </div>
@@ -705,6 +709,10 @@
                                     <div class="w-fit h-fit ms-3 rtl:rotate-180 font-bold" aria-hidden="true">240 Dhs
                                     </div>
                                 </label>
+                                <span
+                                    class="absolute right-5 -top-2 bg-gray-200 px-5 py-1 text-sm rounded-full font-medium">save
+                                    0%
+                                </span>
                             </li>
                         </ul>
                     </div>
