@@ -6,7 +6,7 @@
             'flex flex-col w-full bg-white border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700 divide-y divide-gray-300 dark:divide-gray-700',
     ]) }}>
     @isset($header)
-        <header class="px-6 py-5 flex gap-3 font-medium dark:text-white">
+        <header class="{{ $attributes->get('headerClass') }} px-6 py-5 flex gap-3 font-medium dark:text-white rounded-t-lg">
             @isset($icon)
                 <x-ui.icon :name="$icon" type="o" />
             @endisset
