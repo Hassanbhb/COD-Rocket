@@ -26,7 +26,9 @@ module.exports = {
     ],
 
     plugins: [
-        require('flowbite/plugin'),
+        require('flowbite/plugin')({
+            charts: true,
+        }),
         require("@tailwindcss/typography"),
         plugin(function({ addUtilities }) {
             addUtilities({
