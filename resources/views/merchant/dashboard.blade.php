@@ -332,6 +332,7 @@
 
     </div>
     <div>
+        {{-- dashboard top row --}}
         <div class="flex gap-5">
             {{-- numbers cards --}}
             <div class="py-5 pr-11 pl-5 flex gap-6 justify-between border-2 border-primary bg-white rounded-lg">
@@ -366,6 +367,10 @@
                     <x-ui.badge style="warning" class="!text-sm">20</x-ui.badge>
                 </div>
             </div>
+        </div>
+        <div class="flex gap-5 mt-5">
+            <x-charts.lineChart class="flex-1" />
+            <x-charts.radialChart class="flex-none" />
         </div>
     </div>
     <script src="{{ asset('scripts/dashboard.js') }}"></script>
