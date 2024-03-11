@@ -9,7 +9,7 @@
             </div>
         </div>
 
-        <div class="bg-gray-50 dark:bg-gray-700 p-3 rounded-lg">
+        <div class="rounded-lg">
             <div class="grid grid-cols-3 gap-3 mb-2">
                 <dl class="bg-orange-50 dark:bg-gray-600 rounded-lg flex flex-col items-center justify-center h-[78px]">
                     <dt
@@ -33,7 +33,7 @@
         </div>
 
         <!-- Radial Chart -->
-        <div class="py-6" id="radial-chart"></div>
+        <div id="radial-chart"></div>
 
         <div class="grid grid-cols-1 items-center border-gray-200 border-t dark:border-gray-700 justify-between">
             <div class="flex justify-between items-center pt-5">
