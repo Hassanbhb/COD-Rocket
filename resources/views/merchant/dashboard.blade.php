@@ -37,31 +37,32 @@
                 <x-ui.card
                     class="h-fit overflow-scroll [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
                     slot-class="!p-4 min-w-max grid grid-cols-3 content-center">
-                    <div class="flex gap-3 pr-4 bg-white ">
-                        <div class="flex items-center justify-center p-2 bg-fuchsia-100 rounded-lg h-fit w-fit">
-                            <x-ui.icon name="credit-card" class="!w-9 text-primary self-start" />
+                    <div class="flex gap-3 pr-4 bg-white dark:bg-gray-800 ">
+                        <div class="flex items-center justify-center p-2 bg-fuchsia-900 rounded-lg h-fit w-fit">
+                            <x-ui.icon name="credit-card" class="!w-9 text-primary dark:text-fuchsia-100 self-start" />
                         </div>
                         <div class="flex flex-col justify-center">
-                            <p class="font-medium text-xs text-primary">Weekly Sales</p>
-                            <p class="font-bold text-lg text-primary">7.000 Dhs</p>
+                            <p class="font-medium text-xs text-primary dark:text-fuchsia-200">Weekly Sales</p>
+                            <p class="font-bold text-lg text-primary dark:text-fuchsia-200">7.000 Dhs</p>
                         </div>
                     </div>
-                    <div class="flex gap-3 px-4 border-x border-gray-200 bg-white ">
-                        <div class="flex items-center justify-center p-2 bg-fuchsia-100 rounded-lg h-fit w-fit">
-                            <x-ui.icon name="calendar" class="!w-9 text-primary self-start" />
+                    <div class="flex gap-3 px-4 border-x border-gray-200 bg-white dark:bg-gray-800 ">
+                        <div class="flex items-center justify-center p-2 bg-fuchsia-100 dark:bg-fuchsia-900 rounded-lg h-fit w-fit">
+                            <x-ui.icon name="calendar" class="!w-9 text-primary dark:text-fuchsia-200 self-start" />
                         </div>
                         <div class="flex flex-col justify-center">
-                            <p class="font-medium text-xs text-primary">Week Orders</p>
-                            <p class="font-bold text-lg text-primary">12</p>
+                            <p class="font-medium text-xs text-primary dark:text-fuchsia-200">Week Orders</p>
+                            <p class="font-bold text-lg text-primary dark:text-fuchsia-200">12</p>
                         </div>
                     </div>
-                    <div class="flex gap-3 px-4 bg-white ">
-                        <div class="flex items-center justify-center p-2 bg-fuchsia-100 rounded-lg h-fit w-fit">
-                            <x-ui.icon name="calendar-days" class="!w-9 text-primary self-start" />
+                    <div class="flex gap-3 px-4 bg-white dark:bg-gray-800">
+                        <div class="flex items-center justify-center p-2 bg-fuchsia-100 dark:bg-fuchsia-900 rounded-lg h-fit w-fit">
+                            <x-ui.icon name="calendar-days"
+                                class="!w-9 text-primary dark:text-fuchsia-200 self-start" />
                         </div>
                         <div class="flex flex-col justify-center">
-                            <p class="font-medium text-xs text-primary">Month Sales</p>
-                            <p class="font-bold text-lg text-primary">45</p>
+                            <p class="font-medium text-xs text-primary dark:text-fuchsia-200">Month Sales</p>
+                            <p class="font-bold text-lg text-primary dark:text-fuchsia-200">45</p>
                         </div>
                     </div>
 
